@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navbar styling */
+nav {
+    padding: 2em 5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.nav-bar{
+    display: flex;
+}
+li{
+    padding: 0 .5em;
+}
+nav li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+nav a {
+    color: black;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo styling */
+.logo {
+    width: auto;
+    height: 30px; /* Set a specific height to control logo size */
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin:0;
+    padding: 0;
+}
+
+.dropdown li {
+    display: block;
+}
+
+li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown li:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+.space{
+    background-color: red;
+    width: 10px;
+}
+/* Nav right side */
+.nav-right{
+}
+nav .subscribe ,.login {
+    padding: .5em .5em;
+    border-radius: 3px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login {
+    color: black;
+    background-color: white;
+    border: solid 1px;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}
