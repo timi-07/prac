@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    
 
 a {
     text-decoration: none;
 }
 
-ul {
+a {
     list-style-type: none;
+
 }
 
 /* Navbar styling */
@@ -18,7 +19,6 @@ nav {
     font-weight: bold;
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: space-between;
 }
 .nav-bar{
@@ -42,9 +42,9 @@ nav li a:hover {
 }
 
 /* Logo styling */
-.logo {
-    width: auto;
-    height: 30px; /* Set a specific height to control logo size */
+.logo img {
+    aspect-ratio: 2/1;
+    height:15px; /* Set a specific height to control logo size */
 }
 
 /* Dropdown styling */
@@ -79,8 +79,7 @@ li:hover .dropdown {
     width: 10px;
 }
 /* Nav right side */
-.nav-right{
-}
+
 nav .subscribe ,.login {
     padding: .5em .5em;
     border-radius: 3px;
@@ -88,7 +87,6 @@ nav .subscribe ,.login {
     border: none;
     color: white;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .login {
@@ -97,8 +95,36 @@ nav .subscribe ,.login {
     border: solid 1px;
 }
 
-nav button:hover {
-    cursor: pointer;
-    background-color: darkred;
-    color: white;
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+}
+
+@media only screen and (max-width:1031px) {
+    .movable{
+        display:none
+    }
+    .hamburger {
+        display: block;
+        border: none;
+        background: none;
+    }
+
+
+}
+@media only screen and (max-width:425px) {
+    nav {
+        padding: 2em 1em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .subscribe{
+        display:none
+    }
+
+
 }
