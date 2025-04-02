@@ -15,10 +15,11 @@ a {
 
 /* Navbar styling */
 nav {
-    padding: 2em 5em;
+    padding: 2em 15em;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
 }
 .nav-bar{
@@ -44,7 +45,7 @@ nav li a:hover {
 /* Logo styling */
 .logo img {
     aspect-ratio: 2/1;
-    height:15px; /* Set a specific height to control logo size */
+    height:15px; 
 }
 
 /* Dropdown styling */
@@ -101,9 +102,15 @@ nav .subscribe ,.login {
     background: none;
 }
 
-@media only screen and (max-width:1031px) {
-    .movable{
+@media only screen and (max-width:1050px) {
+    nav{
+        padding: 2em 1em;
+    }
+    .nav-left a{
         display:none
+    } 
+    .nav-right li:nth-child(-n+3){
+        display: none;
     }
     .hamburger {
         display: block;
@@ -111,9 +118,22 @@ nav .subscribe ,.login {
         background: none;
     }
 
+} 
 
+@media only screen and (max-width:768px) {
+    nav {
+        /* padding: 2em 1em; */
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+
+} 
 }
-@media only screen and (max-width:425px) {
+ @media only screen and (max-width:425px) {
     nav {
         padding: 2em 1em;
         font-weight: bold;
@@ -126,5 +146,4 @@ nav .subscribe ,.login {
         display:none
     }
 
-
-}
+} 
